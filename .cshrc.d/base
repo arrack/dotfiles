@@ -39,24 +39,13 @@ setenv PIXLIBRARYPATH /net/account/pixuser/arrack/work/pixlibrary/init.inc.php
 alias composer "php -d allow_url_fopen=On -d apc.enable_cli=off ~/bin/composer.phar"
 alias vi "vim"
 alias g "grep --color -R "
-alias ga "git add"
-alias gd "git diff"
-alias gdfc "git diff --cached"
-alias gc "git commit -v"
-alias gcva "git commit -v -a"
-alias glog "git log --oneline --abbrev-commit --graph --decorate --color"
-alias glp 'git log -p'
-alias gbr 'git branch'
-alias gpush 'git push'
 alias gpull 'git pull --rebase -v'
-alias gs 'git status'
 alias glog "git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative"
 alias . "cd .."
 alias .. "cd ../.."
 alias ... "cd ../../.."
 alias .... "cd ../../../.."
 alias ..... "cd ../../../../..."
-alias mkfirst 'make buildticket'
 #alias tmux "TERM=xterm-256color tmux"
 alias cleartag "( git tag -l | xargs git tag -d ) && gv"
 alias clearbranch "git remote prune origin"
