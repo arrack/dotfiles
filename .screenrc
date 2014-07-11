@@ -1,0 +1,42 @@
+#
+defc1 off
+# 設定總是顯示 screen 的狀態列
+hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %=| %0c:%s "
+
+defscrollback         1000            # default: 100
+defencoding utf-8
+shelltitle shell
+bind b encoding big5 utf8
+bind u encoding utf8 utf8
+bind w height -w 24
+bind m height -w
+termcapinfo screen 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+#略過啟動
+startup_message off
+
+# 關閉錯誤訊息
+vbell off
+
+bindkey "^[[D" prev
+bindkey "^[[C" next
+
+# set the title for the default shell or specified program.
+screen -t Tab1     1
+screen -t Tab2     2
+screen -t Tab3     3
+screen -t Top      10
+
+# Start at window 1
+bind c screen 1
+bind 0 select 10
+select 1
+
+#Hotkey for window resizing
+bind = resize =
+bind + resize +1
+bind - resize -1
+bind _ resize max
+
+

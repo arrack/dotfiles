@@ -1,0 +1,4 @@
+# 如果是在 git directory 下，後面補上 (branch name)
+if (-e /usr/local/bin/git) then
+    alias precmd "source ~/.cshrc.d/.gitprompt"
+endif

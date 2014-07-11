@@ -1,0 +1,15 @@
+#
+complete sudo       p/1/c/
+complete which      p/1/c/
+complete set        'c/*=/f/' 'p/1/s/=' 'n/=/f/'
+complete unset      n/\*/s/
+complete alias      p/1/a/          # only aliases are valid
+complete unalias    n/\*/a/
+complete cd         p/1/d/          # Directories only
+complete chdir      p/1/d/
+complete pushd      p/1/d/
+complete popd       p/1/d/
+complete man        p/1/c/
+complete git 'p/1/(add bisect branch checkout clone commit diff fetch grep init log merge mv pull push rebase reset rm show status stash tag revert cherry-pick)/'
+complete apachectl  'c/*/(start stop restart fullstatus status graceful configtest help)/'
+

@@ -1,0 +1,19 @@
+# vim: sw=4 ts=4
+[user]
+    name = arrack
+    email = arrack@pixnet.tw
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[push]
+    default = current
+[alias]
+    cm = commit -a
+    st = status
+    co = checkout
+    br = branch
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[core]
+    excludesfile = ~/.gitignore

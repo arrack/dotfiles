@@ -1,0 +1,13 @@
+setenv GIT_BRANCH_CMD `sh -c 'git branch --no-color 2> /dev/null' | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+if (! $?old_prompt) then
+    set old_prompt = "$prompt"
+endif
+
+if ("$GIT_BRANCH_CMD" == '') then
+    set prompt = "$old_prompt"
+else
+    set light = '⚡'
+    set old_prompt = "%{[38;5;196m%}%n%{[0m%}@%{[38;5;166m%}%m%{[0m%} [%{[32m%}%~%{[0m%}] (%{[36m%}%T%{[0m%}) "
+    set prompt = "${old_prompt}%{^[[38;5;57m%}[$GIT_BRANCH_CMD] %{^[[0m%} \n >  %{^[[m%}"
+
+endif
