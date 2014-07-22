@@ -41,6 +41,7 @@ alias vi "vim"
 alias g "grep --color -R "
 alias gpull 'git pull --rebase -v'
 alias glog "git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative"
+alias gitpullall "find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull)' ';'"
 alias . "cd .."
 alias .. "cd ../.."
 alias ... "cd ../../.."
@@ -71,3 +72,4 @@ else
   setenv VISUAL $EDITOR
   set path = ($path /usr/local/mysql/bin/ /srv/mysql/bin/)
 endif
+
