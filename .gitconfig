@@ -20,5 +20,5 @@
 
 [pager]
     diff = diff-highlight
-    log = diff-highlight
+    #log = diff-highlight | more
     show = diff-highlight
