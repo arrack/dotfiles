@@ -59,15 +59,21 @@ alias delbr 'sh ~/bin/deletebranch.sh'
 if ( $OSTYPE == FreeBSD ) then
   alias ls "ls -lahFGg"
   alias top "/usr/bin/top -s1"
-  
+
   setenv EDITOR "/usr/local/bin/vim"
+  setenv VISUAL $EDITOR
+else if  ( $OSTYPE == darwin ) then
+  alias ls "ls -lahFGg"
+  alias top "/usr/bin/top -s1"
+
+  setenv EDITOR "/usr/bin/vim"
   setenv VISUAL $EDITOR
 else
   alias colorls "/bin/ls -aF --color=always"
   alias ls "ls-F -aF --color=always"
   alias n "/usr/bin/nslookup"
   alias top "/usr/bin/top -d1"
-  
+
   setenv EDITOR "/usr/bin/vim"
   setenv VISUAL $EDITOR
   set path = ($path /usr/local/mysql/bin/ /srv/mysql/bin/)
