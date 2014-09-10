@@ -63,8 +63,6 @@ alias cbr 'sh ~/bin/createbranch.sh'
 alias delbr 'sh ~/bin/deletebranch.sh'
 
 #make
-alias mrw 'make Retart Worker='
-alias msw 'make Stop Worker='
 
 #
 if ( $OSTYPE == FreeBSD ) then
