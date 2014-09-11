@@ -55,6 +55,8 @@ alias ... "cd ../../.."
 alias .... "cd ../../../.."
 alias ..... "cd ../../../../..."
 alias cw "cd ~/work"
+alias mrw "make restart WORKER=\!:1"
+alias msw "make stop WORKER=\!:1"
 #alias tmux "TERM=xterm-256color tmux"
 
 
