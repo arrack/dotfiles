@@ -46,6 +46,8 @@ alias gitpullall "find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull -v)
 alias gd "git diff"
 alias gs "git status"
 alias gc "git checkout"
+alias gm "git commit"
+alias gbr "git branch"
 
 alias cleartag "( git tag -l | xargs git tag -d ) && gv"
 alias clearbranch "git remote prune origin"
