@@ -50,7 +50,7 @@ alias gm "git commit"
 alias gbr "git branch"
 alias gl "git log"
 
-alias cleartag "( git tag -l | xargs git tag -d ) && gv"
+alias cleartag "( git tag -l | xargs git tag -d )"
 alias clearbranch "git remote prune origin"
 
 #file
