@@ -40,7 +40,7 @@ setenv PIXLIBRARYPATH /net/account/pixuser/arrack/work/pixlibrary/init.inc.php
 alias composer "php -d allow_url_fopen=On -d apc.enable_cli=off ~/bin/composer.phar"
 alias vi "vim"
 alias g "grep --color -R "
-alias gpull 'git pull --rebase -v'
+alias gpull 'git pull --rebase -v -p'
 alias glog "git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative"
 alias gitpullall "find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull -v)' ';'"
 alias gd "git diff"
