@@ -10,6 +10,6 @@ echo "ticket number: $TNUM"
 #git branch -d "ticket$TNUM"
 #git checkout "ticket$TNUM"
 #
-
+git pull --rebase -v -p
 git checkout -b "ticket$TNUM"
 git push --set-upstream origin "ticket$TNUM"
