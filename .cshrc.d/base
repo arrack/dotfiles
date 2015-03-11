@@ -46,6 +46,8 @@ alias gitpullall "find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull -v 
 alias gd "git diff"
 alias gs "git status"
 alias gc "git checkout"
+alias gcm "git checkout master"
+alias gct "git checkout ticket\!:1"
 alias gm "git commit"
 alias gbr "git branch"
 alias gl "git log"
