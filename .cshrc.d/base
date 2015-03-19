@@ -36,6 +36,12 @@ setenv LSCOLORS "gxfxcxdxbxegedabagacad"
 #setenv PAGER "more"
 setenv PIXLIBRARYPATH /net/account/pixuser/arrack/work/pixlibrary/init.inc.php
 
+#unalias
+unalias s
+unalias t
+unalias m
+unalias n
+
 #git
 alias composer "php -d allow_url_fopen=On -d apc.enable_cli=off ~/bin/composer.phar"
 alias vi "vim"
