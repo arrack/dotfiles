@@ -19,6 +19,8 @@ set nocindent
 set list
 set listchars=tab:>-,trail:~
 set nobomb
+"不備份
+set nobackup nowritebackup
 
 highlight PmenuSel ctermfg=0 ctermbg=3 guibg=DarkGrey
 
