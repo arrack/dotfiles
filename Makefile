@@ -10,6 +10,8 @@ init:
 	ln -fs `pwd`/.tmux.conf ~/.tmux.conf
 	ln -fs `pwd`/.vimrc ~/.vimrc
 	ln -fs `pwd`/.vim ~/.vim
+	ln -fs `pwd`/.my.cnf ~/.my.cnf
+	ln -fs `pwd`/.grcat ~/.grcat
 	mkdir -p  ~/bin
 	ln -fs `pwd`/bin/diff-highlight ~/bin/diff-highlight
 	ln -fs `pwd`/bin/createbranch.sh ~/bin/createbranch.sh
