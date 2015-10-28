@@ -21,6 +21,8 @@ set listchars=tab:>-,trail:~
 set nobomb
 "不備份
 set nobackup nowritebackup
+"關掉viminfo
+set viminfo="NONE"
 
 highlight PmenuSel ctermfg=0 ctermbg=3 guibg=DarkGrey
 
