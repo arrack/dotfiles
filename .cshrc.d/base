@@ -42,24 +42,9 @@ unalias t
 unalias m
 unalias n
 
-#git
 alias composer "php -d allow_url_fopen=On -d apc.enable_cli=off ~/bin/composer.phar"
 alias vi "vim"
 alias g "grep --color -R -n \!:1 ./"
-alias gpull 'git pull --rebase -v -p'
-alias glog "git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative"
-alias gitpullall "find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull -v -p)' ';'"
-alias gd "git diff"
-alias gs "git status"
-alias gc "git checkout"
-alias gcm "git checkout master"
-alias gct "git checkout ticket\!:1"
-alias gm "git commit"
-alias gbr "git branch"
-alias gl "git log"
-
-alias cleartag "( git tag -l | xargs git tag -d )"
-alias clearbranch "git remote prune origin"
 
 #file
 alias ../ "cd ../"
