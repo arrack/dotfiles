@@ -10,8 +10,7 @@
 [push]
     default = current
 [alias]
-    cm = commit -va
-    c = commit -vp
+    ci = commit
     st = status
     co = checkout
     br = branch
