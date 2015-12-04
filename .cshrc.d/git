@@ -7,7 +7,7 @@ alias gs "git status"
 alias gc "git checkout"
 alias gcm "git checkout master"
 alias gct "git checkout ticket\!:1"
-alias gm "git commit"
+alias gm "git commit -vp"
 alias gbr "git branch"
 alias gl "git log"
 
