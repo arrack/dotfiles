@@ -16,6 +16,7 @@ init:
 	ln -fs `pwd`/bin/diff-highlight ~/bin/diff-highlight
 	ln -fs `pwd`/bin/createbranch.sh ~/bin/createbranch.sh
 	ln -fs `pwd`/bin/deletebranch.sh ~/bin/deletebranch.sh
+	ln -fs `pwd`/bin/memcache-top ~/bin/memcache-top
 
 
 update:
