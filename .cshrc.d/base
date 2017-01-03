@@ -80,7 +80,7 @@ else if  ( $OSTYPE == darwin ) then
   setenv VISUAL $EDITOR
 else
   alias colorls "/bin/ls -aF --color=always"
-  alias ls "ls-F -aF --color=always"
+  alias ls "ls -alF --color=always"
   alias n "/usr/bin/nslookup"
   alias top "/usr/bin/top -d1"
 
