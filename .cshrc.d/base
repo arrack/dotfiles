@@ -42,8 +42,7 @@ unalias t
 unalias m
 unalias n
 
-#alias composer "php -d allow_url_fopen=On -d apc.enable_cli=off ~/bin/composer.phar"
-alias composer "php -n -c ~/.composer/php.ini ~/bin/composer.phar"
+alias composer "php -d allow_url_fopen=On -d apc.enable_cli=off ~/bin/composer.phar"
 alias vi "vim"
 alias g "grep --color -R -n \!:1 ./"
 
