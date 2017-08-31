@@ -34,7 +34,7 @@ setenv LESSCHARDEF "8bcccbcc18b95.."
 setenv LSCOLORS "gxfxcxdxbxegedabagacad"
 #setenv PAGER "/usr/bin/less"
 #setenv PAGER "more"
-setenv PIXLIBRARYPATH /net/account/pixuser/arrack/work/pixlibrary/init.inc.php
+setenv PIXLIBRARYPATH ~/work/pixlibrary/init.inc.php
 
 #unalias
 unalias s
