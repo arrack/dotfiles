@@ -21,5 +21,9 @@
 
 [pager]
     diff = diff-highlight
-    #log = diff-highlight | less
+    log = diff-highlight | less
     show = diff-highlight
+
+[url "git://"]
+    insteadOf = http://
+    insteadOf = https://

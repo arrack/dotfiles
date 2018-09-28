@@ -17,9 +17,9 @@ init:
 	ln -fs `pwd`/bin/createbranch.sh ~/bin/createbranch.sh
 	ln -fs `pwd`/bin/deletebranch.sh ~/bin/deletebranch.sh
 	ln -fs `pwd`/bin/memcache-top ~/bin/memcache-top
-	ln -fs ~/google-cloud-sdk/bin/gcloud ~/bin/gcloud
-	ln -fs ~/google-cloud-sdk/bin/kubectl ~/bin/kubectl
-	ln -fs ~/google-cloud-sdk/bin/gsutil ~/bin/gsutil
+	ln -fs `pwd`/bin/composer.phar ~/bin/composer.phar
+
+>>>>>>> 11fc3f198615b446430bed9260bba9ca6683b3fe
 
 update:
 	git pull
