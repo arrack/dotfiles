@@ -7,11 +7,15 @@ set autolist
 set dspmbyte="big5"
 set history = 5000
 set mail = (1 /var/mail/$USER)
-set manpath = (/usr/local/man /usr/X11R6/man /usr/man)
-set path = (~/bin ~)
+set manpath = (/usr/local/man /usr/man)
+
+set path = (~/bin /usr/local/bin /usr/local/sbin /usr/X11R6/bin /usr/bin /usr/sbin /bin /sbin)
+set path = ($path /usr/local/go/bin)
+set path = ($path ~/google-cloud-sdk/bin)
+set path = ($path /usr/local/mysql/bin)
 set path = ($path /usr/local/pgsql/bin)
-set path = ($path /usr/local/bin /usr/local/sbin /usr/X11R6/bin /usr/bin)
-set path = ($path /usr/sbin /etenv PAGER sr/games /bin /sbin /stand)
+set path = ($path /usr/local/opt/php@7.1/bin /usr/local/opt/php@7.2/bin)
+
 #set prompt = "%B%m%b [%/] -%n- "
 #MAGENTA="\033[1;31m"
 #ORANGE="\033[1;33m"
