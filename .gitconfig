@@ -21,7 +21,7 @@
 
 [pager]
     diff = diff-highlight
-    log = diff-highlight | less
+    log = diff-highlight | more
     show = diff-highlight
 
 [url "git://"]
