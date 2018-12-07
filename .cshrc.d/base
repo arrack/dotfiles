@@ -48,8 +48,11 @@ unalias n
 
 alias composer "php -d allow_url_fopen=On -d apc.enable_cli=off ~/bin/composer.phar"
 alias vi "vim"
-#alias g "grep --color -R -n \!:1 ./"
+if ( $OSTYPE == FreeBSD ) then
+alias g "grep --exclude="*\.min\.*" --exclude="*/node_modules/*" --exclude="*/.git/*" --exclude="*/vendor/*" --exclude="*/node_modules/*" --color -R -n \!:1 ./"
+else
 alias g 'grep --exclude="*\.min\.*" --exclude-dir="node_modules" --exclude-dir=".git" --exclude-dir="vendor" --color -R -n  \!:1 ./'
+end if
 
 #file
 alias ../ "cd ../"
