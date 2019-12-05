@@ -19,8 +19,6 @@ init:
 	ln -fs `pwd`/bin/memcache-top ~/bin/memcache-top
 	ln -fs `pwd`/bin/composer.phar ~/bin/composer.phar
 
->>>>>>> 11fc3f198615b446430bed9260bba9ca6683b3fe
-
 update:
 	git pull
 	git push
