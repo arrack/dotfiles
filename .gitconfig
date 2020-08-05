@@ -24,6 +24,3 @@
     log = diff-highlight | more
     show = diff-highlight
 
-[url "git://"]
-    insteadOf = http://
-    insteadOf = https://
