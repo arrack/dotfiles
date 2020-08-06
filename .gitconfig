@@ -18,6 +18,8 @@
     lg1 = log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold red)%d%C(reset)' --abbrev-commit --date=iso
 [core]
     excludesfile = ~/.gitignore
+	autocrlf = true
+	editor = vim
 
 [pager]
     diff = diff-highlight
