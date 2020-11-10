@@ -39,6 +39,7 @@ setenv LSCOLORS "gxfxcxdxbxegedabagacad"
 #setenv PAGER "/usr/bin/less"
 #setenv PAGER "more"
 setenv PIXLIBRARYPATH ~/work/pixlibrary/init.inc.php
+setenv CLOUDSDK_PYTHON python2
 
 #unalias
 unalias s
