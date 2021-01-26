@@ -30,9 +30,9 @@ setenv BLOCKSIZE "k"
 #setenv TERM xterm-256color
 setenv TERM screen-256color
 setenv CLICOLOR_FORCE
-setenv ENABLE_STARTUP_LOCALE "zh_TW.UTF-8"
-setenv LANG "zh_TW.UTF-8"
-setenv LC_ALL "zh_TW.UTF-8"
+setenv ENABLE_STARTUP_LOCALE "en_US.UTF-8"
+setenv LANG "en_US.UTF-8"
+setenv LC_ALL "en_US.UTF-8"
 setenv LESS "-EmrSw"
 setenv LESSCHARDEF "8bcccbcc18b95.."
 setenv LSCOLORS "gxfxcxdxbxegedabagacad"
