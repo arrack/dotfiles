@@ -16,6 +16,13 @@ set path = ($path /usr/local/mysql/bin)
 set path = ($path /usr/local/pgsql/bin)
 set path = ($path /usr/local/opt/php@7.1/bin /usr/local/opt/php@7.2/bin)
 
+#remove proxy
+
+set http_proxy =
+set HTTP_RROXY =
+set https_proxy =
+set HTTPS_PROXY =
+
 #set prompt = "%B%m%b [%/] -%n- "
 #MAGENTA="\033[1;31m"
 #ORANGE="\033[1;33m"
