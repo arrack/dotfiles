@@ -16,6 +16,13 @@ set path = ($path /usr/local/mysql/bin)
 set path = ($path /usr/local/pgsql/bin)
 set path = ($path /usr/local/opt/php@7.1/bin /usr/local/opt/php@7.2/bin)
 
+#remove proxy
+
+set http_proxy =
+set HTTP_RROXY =
+set https_proxy =
+set HTTPS_PROXY =
+
 #set prompt = "%B%m%b [%/] -%n- "
 #MAGENTA="\033[1;31m"
 #ORANGE="\033[1;33m"
@@ -30,9 +37,9 @@ setenv BLOCKSIZE "k"
 #setenv TERM xterm-256color
 setenv TERM screen-256color
 setenv CLICOLOR_FORCE
-setenv ENABLE_STARTUP_LOCALE "zh_TW.UTF-8"
-setenv LANG "zh_TW.UTF-8"
-setenv LC_ALL "zh_TW.UTF-8"
+setenv ENABLE_STARTUP_LOCALE "en_US.UTF-8"
+setenv LANG "en_US.UTF-8"
+setenv LC_ALL "en_US.UTF-8"
 setenv LESS "-EmrSw"
 setenv LESSCHARDEF "8bcccbcc18b95.."
 setenv LSCOLORS "gxfxcxdxbxegedabagacad"
@@ -52,7 +59,8 @@ alias vi "vim"
 if ( $OSTYPE == FreeBSD ) then
 alias g 'grep --exclude="*\.min\.*" --exclude="*/node_modules/*" --exclude="*/.git/*" --exclude="*/vendor/*" --exclude="*/node_modules/*" --color -R -n \!:1 ./'
 else
-alias g 'grep --exclude="*\.min\.*" --exclude-dir="node_modules" --exclude-dir=".git" --exclude-dir="vendor" --color -R -n  \!:1 ./'
+alias g 'grep --exclude="*\.min\.*" --exclude-dir="node_modules" --exclude-dir=".git" --exclude-dir="vendor" --color -R -n -s  \!:1 ./'
+alias g2 'grep --exclude-dir=".git"  --color -R -n -s \!:1 ./'
 endif
 
 #file
