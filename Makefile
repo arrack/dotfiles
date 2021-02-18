@@ -1,6 +1,8 @@
 #
 
 init:
+	rm -f ~/.bashrc
+	ln -fs `pwd`/.bashrc ~/.bashrc
 	rm -f ~/.cshrc
 	ln -fs `pwd`/.cshrc ~/.cshrc
 	rm -rf ~/.cshrc.d
